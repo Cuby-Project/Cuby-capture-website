@@ -20,30 +20,6 @@ You are looking a the website part of Cuby, this only the solving capture tool f
 -<a href="https://github.com/quentinformatique/Cuby/issues/new/choose">Report a bug</a>--<a href="https://github.com/quentinformatique/Cuby/issues/new/choose">Request a feature</a>-
 </div>
 
-## Features
-
----
-- Timer
-- Scramble generator
-- Statistics
-- Multiples cubes
-- algorithms library (in development)
-- auto solve (in development)
-## Screenshots
-
----
-![alt text](src/img/img_1.png)
-![alt text](src/img/img.png)
-## Installation
-
----
-if you want to try the app you can either download the release or follow these steps:
-1. Clone or fork this repositorie
-2. run the following commands at the root folder:
-    - ```npm install```
-    - ```npx tailwindcss -i ./src/css/input.css -o ./src/css/tailwind/output.css --watch```
-    - ```npm run start```
-
 ## Contributing
 
 ---
@@ -69,7 +45,7 @@ Don't forget to give the project a star! Thanks again!
 ## Coming in the future
 
 ---
-This app is still in development, I'm currently working on the statistics sections, I want a page where you can find all the information about your solves with charts. I have just finished the inner modelisation, so now the app is usable, but there is still a lot of progress too, if you have any suggestions fell free to open a pull request or an issue if you find a bug.
+This app is still in development, I have just finished the inner modelisation, so now the app is usable, but there is still a lot of progress too, if you have any suggestions fell free to open a pull request or an issue if you find a bug.
 
 ## Version: v2.0
 ## Developed by : *quentinformatique*
