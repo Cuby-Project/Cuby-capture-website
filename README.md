@@ -5,10 +5,10 @@
 ---
 
 
-<img src="https://img.shields.io/github/stars/quentinformatique/Cuby.svg">
-<img src="https://img.shields.io/github/forks/quentinformatique/Cuby.svg">
-<img src="https://img.shields.io/github/issues/quentinformatique/Cuby.svg">
-<img src="https://img.shields.io/github/last-commit/quentinformatique/Cuby.svg">
+<img src="https://img.shields.io/github/stars/quentinformatique/Cuby-capture-website.svg">
+<img src="https://img.shields.io/github/forks/quentinformatique/Cuby-capture-website.svg">
+<img src="https://img.shields.io/github/issues/quentinformatique/Cuby-capture-website.svg">
+<img src="https://img.shields.io/github/last-commit/quentinformatique/Cuby-capture-website.svg">
 
 </div>
 
