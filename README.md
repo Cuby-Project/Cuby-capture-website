@@ -41,4 +41,5 @@ This app is still in development, I have just finished the inner modelisation, s
 
 ## Version: v2.0
 ## Developed by : *quentinformatique*
+## With the help of Belicfr 
 
