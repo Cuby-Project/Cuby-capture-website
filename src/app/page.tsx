@@ -1,10 +1,16 @@
-import Image from "next/image";
-import { Button } from "./Button"
+'use client';
+import { Button } from "./Button";
+import {ButtonParams} from "./interfaces.ts";
 
 export default function Home() {
-  let buttonProps = {color: "", label: "Hello", icon: "", onClick: () => {
-      console.log("Coucou pute");
-      }};
+  let buttonProps:ButtonParams = {
+      color: "",
+      label: "Hello",
+      icon: "",
+      clickEvent: () => {
+        console.log("Coucou pute");
+      }
+  };
 
   return (
       <>
@@ -13,7 +19,7 @@ export default function Home() {
         <Button color={buttonProps.color}
                 label={buttonProps.label}
                 icon={buttonProps.icon}
-                clickEvent={buttonProps.onClick} />
+                clickEvent={buttonProps.clickEvent} />
       </>
   );
 }

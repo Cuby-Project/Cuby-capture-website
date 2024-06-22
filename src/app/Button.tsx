@@ -1,11 +1,6 @@
+'use client';
 import {FC, PropsWithChildren} from "react";
-
-interface ButtonParams {
-    color: string,
-    label: string,
-    icon: string,
-    clickEvent: () => void
-}
+import {ButtonParams} from "./interfaces.ts";
 
 export const Button: FC<PropsWithChildren<ButtonParams>> = props => {
     let buttonStyle = {
@@ -13,7 +8,7 @@ export const Button: FC<PropsWithChildren<ButtonParams>> = props => {
     };
 
     return (
-        <button style={buttonStyle} onClick={() => {props.clickEvent}}>
+        <button style={buttonStyle} onClick={props.clickEvent}>
             {props.label}
         </button>
     );
