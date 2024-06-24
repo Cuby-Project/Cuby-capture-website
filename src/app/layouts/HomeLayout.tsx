@@ -1,26 +1,17 @@
 'use client';
-import {Button} from "@/app/components/Button";
-import {ButtonParams} from "@/app/interfaces.ts";
+import {TopBarParams} from "@/app/interfaces.ts";
+import {TopBar} from "@/app/components/TopBar";
 
 export default function HomeLayout () {
 
-    let buttonProps: ButtonParams = {
-        color: "primary",
-        label: "Click Me!",
-        icon: "fas fa-hand-pointer",
-        clickEvent: () => {
-            console.log("Button Clicked!");
-        }
-    }
+    let TopBarProps: TopBarParams = {
+        color: "gray-1",
+    };
 
     return (
         <>
+            <TopBar color={TopBarProps.color} />
             <p>Hello, World! :)</p>
-
-            <Button color={buttonProps.color}
-                    label={buttonProps.label}
-                    icon={buttonProps.icon}
-                    clickEvent={buttonProps.clickEvent} />
         </>
     );
 };
