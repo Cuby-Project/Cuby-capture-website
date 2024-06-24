@@ -1,5 +1,4 @@
 'use client';
-import {ButtonParams} from "./interfaces.ts";
 import HomeLayout from "./layouts/HomeLayout";
 import CaptureLayout from "./layouts/CaptureLayout";
 import EndLayout from "./layouts/EndLayout";
