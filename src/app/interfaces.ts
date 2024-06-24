@@ -4,3 +4,7 @@ export interface ButtonParams {
     icon: string,
     clickEvent: () => void
 }
+
+export interface TopBarParams {
+    color: string,
+}
