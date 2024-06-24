@@ -1,6 +1,6 @@
 'use client';
 import {FC, PropsWithChildren} from "react";
-import {ButtonParams} from "./interfaces.ts";
+import {ButtonParams} from "../interfaces.ts";
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenNib, faEnvelope } from '@fortawesome/free-solid-svg-icons'
