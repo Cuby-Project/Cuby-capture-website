@@ -1,6 +1,6 @@
 'use client';
 import {FC, PropsWithChildren} from "react";
-import {TopBarParams} from "../interfaces.ts";
+import {TopBarParams} from "../interfaces";
 import React from 'react'
 
 export const TopBar: FC<PropsWithChildren<TopBarParams>> = props => {
