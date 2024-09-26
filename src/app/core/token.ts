@@ -9,7 +9,7 @@ class TokenService {
          // TODO: this.token = this.extractTokenFromUrl(url);
         // TODO: this.decodedToken = this.decodeToken(this.token);
         this.token = 'mockToken';
-        this.decodedToken = { lang: 'fr', apiUrl: 'https://api.example.com', userId: '12345' };
+        this.decodedToken = { lang: 'en', apiUrl: 'https://api.example.com', userId: '12345' };
     }
 
     private extractTokenFromUrl(url: string): string {

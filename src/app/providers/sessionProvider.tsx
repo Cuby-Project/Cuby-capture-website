@@ -1,4 +1,4 @@
-import { useContext, createContext } from "react";
+import {useContext, createContext, ReactNode} from "react";
 import TokenService from '@/app/core/token';
 import LanguageService from '@/app/core/lang';
 
@@ -13,7 +13,7 @@ export function useSession() {
     return useContext(SessionContext);
 }
 
-export function SessionProvider({ children }: { children: React.ReactNode }) {
+export function SessionProvider({ children }: { children: ReactNode }) {
     const tokenService = new TokenService(window.location.href);
     const session = {
         tokenService: tokenService,
