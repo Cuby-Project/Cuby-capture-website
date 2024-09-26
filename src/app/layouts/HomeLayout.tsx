@@ -1,20 +1,34 @@
 'use client';
-import {TopBarParams} from "@/app/interfaces";
+import {useSession} from "@/app/providers/sessionProvider";
+import {ButtonParams, TopBarParams} from "@/app/interfaces";
 import {TopBar} from "@/app/components/TopBar";
 import {Button} from "@/app/components/Button";
 import { faCamera } from '@fortawesome/free-solid-svg-icons';
 
 export default function HomeLayout () {
+    const session = useSession();
 
-    let TopBarProps: TopBarParams = {
+    const TopBarProps: TopBarParams = {
         color: "gray-1",
     };
+
+    const ButtonProps: ButtonParams = {
+        color: "#009FFD",
+        label: "Capture your cube",
+        icon: faCamera,
+        clickEvent: () => alert("Hello, World!")
+    }
 
     return (
         <>
             <TopBar color={TopBarProps.color} />
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eligendi est porro quae totam voluptatibus! Cumque dolor eligendi illum porro saepe sint totam! Enim laboriosam maiores molestias neque recusandae vero.</p>
-            <Button label="Capture your cube" color="#009FFD" clickEvent={() => alert("Hello, World!")}  icon={faCamera}/>
+            <div className="flex flex-col h-5/6 justify-between items-center">
+                <p className="m-5 text-center">{session?.languageService.getText("tutorial-text") ?? "bite"}</p>
+                <div className="flex flex-col items-center">
+                    <img src="tutorial-image.png" alt="logo" className="w-4/6"/>
+                    <Button {...ButtonProps}/>
+                </div>
+            </div>
         </>
     );
 };
