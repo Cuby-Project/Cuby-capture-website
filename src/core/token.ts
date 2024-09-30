@@ -2,16 +2,17 @@
 import jwt from 'jsonwebtoken';
 
 class TokenService {
-    private token: string;
+    // private token: string;
     private decodedToken: any;
 
     constructor(url: string) {
          // TODO: this.token = this.extractTokenFromUrl(url);
         // TODO: this.decodedToken = this.decodeToken(this.token);
-        this.token = 'mockToken';
+        console.log(url)
+        // this.token = 'mockToken';
         this.decodedToken = { lang: 'en', apiUrl: 'https://api.example.com', userId: '12345' };
     }
-
+/*
     private extractTokenFromUrl(url: string): string {
         const urlParams = new URLSearchParams(new URL(url).search);
         return urlParams.get('token') || '';
@@ -25,7 +26,7 @@ class TokenService {
             return null;
         }
     }
-
+*/
     public getLanguage(): string {
         return this.decodedToken?.lang || 'default';
     }
