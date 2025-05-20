@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --custom-gray-0: #424549;
+  --custom-gray-1: #36393e;
+  --custom-gray-2: #282b30;
+  --custom-gray-3: #1e2124;
+  --custom-blue: #009FFD;
+  --font-color: white;
+
+  font-family: "Montserrat", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background: var(--custom-gray-0);
+  color: var(--font-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+
+  #warning_computer {
+    position: fixed;
+    inset: 0;
+    background: var(--custom-gray-2);
+
+    justify-content: center;
+    align-items: center;
+  }
+
+}
